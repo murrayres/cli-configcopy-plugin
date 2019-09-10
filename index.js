@@ -26,13 +26,13 @@ function update() {
 
 function init(appkit) {
   appkit.args
-    .command('config:copy', 'copy an apps manual config vars to another app', ccopy_opts, ccopy.bind(null, appkit))
+    .command('configcopy', 'copy an apps manual config vars to another app', ccopy_opts, ccopy.bind(null, appkit))
 }
 
 module.exports = {
   init:init,
   update:update,
-  group:'config',
+  group:'configcopy':,
   help:'copy an apps manual config vars to another app',
   primary:true
 };

@@ -32,7 +32,7 @@ function init(appkit) {
 module.exports = {
   init:init,
   update:update,
-  group:'configcopy':,
+  group:'configcopy',
   help:'copy an apps manual config vars to another app',
   primary:true
 };

@@ -13,6 +13,6 @@ aka plugins:install https://github.com/murrayres/cli-configcopy-plugin
 usage
 
 ```
-aka configcopy -a <fromapp-dev> -t <toappdev>
+aka configcopy -a <fromapp-dev> -t <toapp-dev>
 ```
 

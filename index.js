@@ -8,6 +8,7 @@ async function ccopy(appkit, args) {
         const configvars = await appkit.api.get('/apps/' + args.app + '/config-vars')
         var newlist = {}
         for (var key in configvars) {
+//TODO need to update to avoid others
             if (!key.includes("_VAULT_") && key != "DATABASE_URL" && key != "RABBITMQ_URL" && !key.startsWith("S3_") && key !="MONGODB_URL" && key !="REDIS_URL") {
                 newlist[key] = configvars[key]
             }
@@ -52,3 +53,4 @@ module.exports = {
             demand: true
         },
     }
+

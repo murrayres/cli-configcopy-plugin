@@ -9,7 +9,7 @@ async function ccopy(appkit, args) {
         var newlist = {}
         for (var key in configvars) {
 //TODO need to update to avoid others
-            if (!key.includes("_VAULT_") && key != "DATABASE_URL" && key != "RABBITMQ_URL" && !key.startsWith("S3_") && key !="MONGODB_URL" && key !="REDIS_URL") {
+            if (!key.includes("_VAULT_") && key != "DATABASE_URL" && key != "RABBITMQ_URL" && !key.startsWith("S3_") && key !="MONGODB_URL" && key !="REDIS_URL" && key != "ES_URL" && key != "KIBANA_URL" && key != "MEMCACHED_URL") {
                 newlist[key] = configvars[key]
             }
         }
